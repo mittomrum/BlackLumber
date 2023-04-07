@@ -1,7 +1,11 @@
-on: 
- push:
-  branches: 
-   - master
+name: Deploy Website 🙏
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - website
+
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
